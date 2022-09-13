@@ -50,7 +50,7 @@ Lightweight yarn docker image on alpine with npm installation on build
 version: 3.16.2
 
 ## NodeJS
-version: 18.8.0
+version: 18.9.0
 
 ## NPM
 version: 8.19.1
