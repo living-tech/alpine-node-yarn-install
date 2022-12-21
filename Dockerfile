@@ -1,4 +1,4 @@
-FROM ghcr.io/living-tech/alpine-node16:16.18.1
+FROM ghcr.io/living-tech/alpine-node16:16.19.0
 
 LABEL maintainer="NOW ROOM<system@nowroom.jp>"
 
