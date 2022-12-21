@@ -3,14 +3,14 @@ name: Build and Publish Docker
 on:
         push:
                 branches:
-                        - 18
+                        - 19
         workflow_dispatch:
 
 jobs:
         build_and_push:
                 runs-on: ubuntu-latest
                 env:
-                        IMAGE_NAME: alpine-node18-yarn-install
+                        IMAGE_NAME: alpine-node19-yarn-install
                 steps:
                         - name: checkout
                           uses: actions/checkout@v3
@@ -31,5 +31,5 @@ jobs:
                                   context: .
                                   push: true
                                   tags: |
-                                          ghcr.io/${{ github.repository_owner }}/${{ env.IMAGE_NAME }}:18
+                                          ghcr.io/${{ github.repository_owner }}/${{ env.IMAGE_NAME }}:19
                                           ghcr.io/${{ github.repository_owner }}/${{ env.IMAGE_NAME }}:latest
