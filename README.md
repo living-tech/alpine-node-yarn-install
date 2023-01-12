@@ -2,10 +2,10 @@
 Lightweight yarn docker image on alpine with npm installation on build
 
 ## alpine
-version: 3.17.0
+version: 3.17.1
 
 ## NodeJS
-version: 19.3.0
+version: 19.4.0
 
 ## NPM
 version: 9.2.0
